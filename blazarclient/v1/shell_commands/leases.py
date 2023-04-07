@@ -49,6 +49,7 @@ CREATE_RESERVATION_KEYS = {
         "disk_gb": "",
         "amount": "",
         "affinity": "None",
+        "custom_resources": "",
         "resource_properties": "",
         "resource_type": 'virtual:instance'
     },
@@ -457,6 +458,7 @@ class UpdateLease(command.UpdateCommand):
                 'min', 'max', 'hypervisor_properties', 'resource_properties',
                 # Keys for instance reservation
                 'vcpus', 'memory_mb', 'disk_gb', 'amount', 'affinity',
+                'custom_resources',
                 # Keys for floating IP reservation
                 'amount', 'network_id', 'required_floatingips',
             ])
